@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>JS特效测试</title>			<!-- 标题 -->
+	<meta charset="utf-8">
+	<style type="text/css">
+		.div1{
+			width: 100px;
+			height: 100px;
+			background-color: red; 
+		}			/*设置初始方块的形状和颜色*/
+	</style>
+	<script src="/Users/huhuhu/Desktop/sublime文件/JS/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){       //设置编辑function函数
+			$(".div1").hover(function () {
+				$(this).css('background-color','blue');
+				$(this).css('width','200px');
+				$(this).css('height','200px');
+			 },		//鼠标放在初始方块上时变换为蓝色的大方块
+			function () {
+				$(this).css('background-color','red');
+				$(this).css('width','100px');
+				$(this).css('height','100px');
+			});   	//鼠标移除方框时，又变回初始方框的样式
+		});
+	</script>
+</head>
+<body>
+	<div class="div1"></div>		
+</body>
+</html>

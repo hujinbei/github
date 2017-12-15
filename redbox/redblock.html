@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>JavaScript</title>
+<style type="text/css">
+	 #div1 {width: 100px; height: 100px; background:red; }
+.boxs
+ {	
+	width: 200px;
+	height: 200px;
+	background:red; 
+}
+</style>
+<script src="/Users/huhuhu/Desktop/sublime文件/JS/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+window.onload=function ()
+{
+	var oDiv = document.getElementById('div1');
+	oDiv .onmouseover=toGreen;
+	oDiv .onmouseover=toRed;
+}
+
+function toGreen()
+{
+
+	var oDiv1 = document.getElementById('div1');
+
+	oDiv1.style.width='200px';
+	oDiv1.style.height='200px';
+	oDiv1.style.background='green';
+}
+
+function toRed()
+{
+
+	var oDiv1 = document.getElementById('div1');
+
+	oDiv1.style.width='100px';
+	oDiv1.style.height='100px';
+	oDiv1.style.background='red';
+}
+</script>
+</head>
+<body>
+	<div id="div1" onmouseover="toGreen()" onmouseout="toRed()"></div>
+	    
+</body>
+</html>
