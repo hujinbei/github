@@ -1,0 +1,398 @@
+<p><strong> 一. 实验名称：Z变换教案</strong></p>
+<p><strong> 二. 实验目的：使用markdown制作z变换教案</strong></p>
+<p><strong> 三. 实验器材：电脑、程序编辑器 SublimeText 和 Haroopad 及“z变换教案”文档一份</strong></p>
+<p><strong> 四. 实验过程：</strong>通过在Sublime Text安装Markdown插件来进行对z变换教案的编辑，实验过程中熟悉了关于Sublime Text 的Packcage Control的安装，以及探究markdown插件中markdown preview和markdown editting的安装，尝试Markdown标记语言的用法，再将markdown（md）.文件转化为html.文件再网页中进行预览;</p>
+<p><strong> 五. 实验数据及分析：</strong></p>
+<p><strong> 查阅markdown标记语言</strong></p>
+<p>Markdown使用规则</p>
+<ul>
+<li>
+<p>标题<br />
+标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 # 号即可。</p>
+<ul>
+<li>
+<h1><a name="user-content-_1" href="#_1" aria-hidden="true"><span></span></a>一级标题</h1>
+</li>
+<li>
+<h2><a name="user-content-_2" href="#_2" aria-hidden="true"><span></span></a>二级标题</h2>
+</li>
+<li>
+<h3><a name="user-content-_3" href="#_3" aria-hidden="true"><span></span></a>三级标题</h3>
+</li>
+</ul>
+</li>
+</ul>
+<p>以此类推，总共六级标题，建议在井号后加一个空格，这是最标准的 Markdown 语法。</p>
+<ul>
+<li>
+<p>列表</p>
+<p>列表的显示只需要在文字前加上 - 或 * 即可变为无序列表，有序列表则直接在文字前加 1. 2. 3. 符号要和文字之间加上一个字符的空格。 要注意的是 前后都要有空行：<br />
+<img alt="标题" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/014.png" /></p>
+</li>
+<li>
+<p>引用</p>
+<p>在文本前加入 &gt; 这种尖括号（大于号）即可<br />
+<img alt="引用" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/015.png" /></p>
+</li>
+<li>
+<p>图片与链接</p>
+<p>插入链接与插入图片的语法很像，区别在一个 !号<br />
+插入图片的地址需要图床，生成URL地址即可。<br />
+注意：图片必须与需插入的文件在同一文件夹内；</p>
+</li>
+</ul>
+<p><img alt="图片" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/016.jpg" /></p>
+<ul>
+<li>粗体与斜体</li>
+</ul>
+<p>Markdown 的粗体和斜体用两个 * 包含一段文本就是粗体的语法，用一个 * 包含一段文本就是斜体的语法。<br />
+     例如：<strong>这里是粗体</strong>    <em>这里是斜体</em></p>
+<ul>
+<li>居中和对齐<br />
+&lt; center  &gt;居中&lt; /center  &gt; <br />
+&lt; h5 style=&rdquo;text-align:right&rdquo;&gt;右对齐&lt; /h5&gt;<br />
+&lt; h5 style=&rdquo;text-align:left&rdquo;&gt;左对齐&lt; /h5&gt;<br />
+或者<br />
+居中<br />
+&lt; center&gt;居中</ center></li>
+</ul>
+<p><center>居中</center></p>
+<p>左对齐：<br />
+&lt; p align=&rdquo;left&rdquo;&gt;左对齐&lt; /p&gt;</p>
+<p align="left">左对齐</p>
+
+<p>右对齐：<br />
+&lt; p align=&rdquo;right&rdquo;&gt;右对齐&lt; /p&gt;</p>
+<p align="right">右对齐</p>
+
+<ul>
+<li>换行符</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>爱好</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张三</td>
+<td>足球<br>篮球</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>李四|羽毛球&lt;br&gt;乒乓球
+
+显示为：
+姓名
+爱好
+张三
+足球
+篮球
+李四
+羽毛球
+乒乓球
+</code></pre>
+<ul>
+<li>表格</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>标题</th>
+<th>标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+<h5><a name="user-content-_4" href="#_4" aria-hidden="true"><span></span></a>还可以添加一些边框：</h5>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>标题</th>
+<th>标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+<p>你可以控制单元格的对齐方式：</p>
+<table>
+<thead>
+<tr>
+<th align="left">标题</th>
+<th>标题</th>
+<th align="right">标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">左</td>
+<td>中</td>
+<td align="right">右</td>
+</tr>
+<tr>
+<td align="left">左</td>
+<td>中</td>
+<td align="right">右</td>
+</tr>
+</tbody>
+</table>
+<p>例子如下：<br />
+| Tables  | Are       | Cool  |<br />
+| ------------- |:-------------:| -----:|<br />
+| col 3 is      | right-aligned | $1600 |<br />
+| col 2 is      | centered      |   $12 |<br />
+| zebra stripes | are neat      |    $1 |<br />
+     这种语法生成的表格如下：</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>代码框</p>
+<p>如果需要在文章里引用代码框，在 Markdown 下实现，只需要用两个 ` 把中间的代码包裹起来。图例：</p>
+<p>使用 tab 键即可缩进。</p>
+</li>
+<li>
+<p>分割线</p>
+<p>分割线的语法只需要另起一行，连续输入三个星号 *** 即可。</p>
+</li>
+<li>
+<p>文本样式<br />
+（带“*”星号的文本样式，在原版Markdown标准中不存在，但在其大部分衍生标准中被添加）</p>
+<ul>
+<li>链接 :<a href="URL">Title</a> [Title] (URL)</li>
+<li>加粗 :<strong>Bold</strong> </li>
+<li>斜体字 :<em>Italics</em> </li>
+<li>*删除线 :<del>text</del> (<del> text</del>)</li>
+<li>*高亮 :==text== = =text==</li>
+<li>段落 : 段落之间空一行</li>
+<li>换行符 : 一行结束时输入两个空格</li>
+<li>列表 :* 添加星号成为一个新的列表项。</li>
+<li>引用 :&gt; 引用内容</li>
+<li>内嵌代码 : <code>alert('Hello World');</code></li>
+<li>画水平线 (HR) :-------- (- - - - - - - -)</li>
+</ul>
+</li>
+<li>
+<p>图片</p>
+</li>
+</ul>
+<p>使用Markdown将图像插入文章，你需要在Markdown编辑器输入 <img alt="" src="" /> 。 这时在预览面板中会自动创建一个图像上传框。你可以从电脑桌面拖放图片(.png, .gif, .jpg)到上传框, 或者点击图片上传框使用标准的图像上传方式。 如果你想通过链接插入网络上已经存在的图片，只要单击图片上传框的左下角的“链接”图标，这时就会呈现图像URL的输入框。想给图片添加一个标题, 你需要做的是将标题文本插图中的方括号，e.g;<img alt="This is a title" src="" />.</p>
+<p><strong> 注：</strong><br />
+<em> 先输入标题行，回车后在第二行输入|-后，按tab键就将进入Table编辑模式。<br />
+</em> 表格必须与前面输入的文字之间有空行，否则表格会被当成普通文字渲染。</p>
+<p>具体使用Sublime Text编写Markdown：<br />
+<a href="http://blog.csdn.net/qazxswed807/article/details/51235792">markdown使用教程1（参考）</a></p>
+<p><a href="http://www.appinn.com/markdown/">markdown使用教程2（参考）</a></p>
+<p><strong> 安装关于markdown插件:</strong><br />
+<strong> 1. 安装Package Control. </strong></p>
+<ul>
+<li>
+<p>ctrl+shift+P输入install进入install Packages</p>
+</li>
+<li>
+<p><strong> ctrl+` 打开控制台，拷贝下面的代码运行：</strong></p>
+<ul>
+<li>import urllib2,os; pf=&rsquo;Package Control.sublime-package&rsquo;;ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), &lsquo;wb&rsquo; ).write( urllib2.urlopen( &lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&lsquo; +pf.replace( &lsquo; &lsquo;,&rsquo;%20&rsquo; )).read()); print( &lsquo;Please restart Sublime Text to finish installation&rsquo;) *</li>
+</ul>
+</li>
+<li>
+<p>输入markdown preview（支持设置markdown语法，直接生成html进行预览等功能)</p>
+<ul>
+<li>按CTRL + B生成网页HTML</li>
+</ul>
+</li>
+<li>
+<p>输入markdown editting(除了高亮显示语法，MarkdownEditing 还提供了一些快捷键用于快速插入markdown 标记)</p>
+<ul>
+<li>在Preferences -&gt;Color Scheme找自己喜欢的主题<br />
+如：插入链接：Ctrl + Win + K<br />
+    插入图片：Shift + Win + K</li>
+</ul>
+</li>
+<li>
+<p>自定义快捷键：点击 Preferences &ndash;&gt; 选择 Key Bindings User，输入：<br />
+    { &ldquo;keys&rdquo;: [&ldquo;alt+m&rdquo;], &ldquo;command&rdquo;: &ldquo;markdown_preview&rdquo;, &ldquo;args&rdquo;: {&ldquo;target&rdquo;: &ldquo;browser&rdquo;, &ldquo;parser&rdquo;:&rdquo;markdown&rdquo;} }</p>
+</li>
+<li>
+<p>保存后，直接输入快捷键：Alt + M 就可以直接在浏览器中预览生成的HTML文件了。</p>
+<p>重启软件测试：ctrl+shift+P 输入install paclage 调出Install package包验证是否成功<br />
+测试在sublime text 中可以直接ctrl+shift+p 输入install package 安装package Control</p>
+<p>参考网页：<br />
+<a href="http://blog.csdn.net/qazxswed807/article/details/51235792">Package Contro插件安装1</a><br />
+<a href="http://www.cnblogs.com/angel-1314/p/6123717.html">Package Control插件安装2</a></p>
+</li>
+</ul>
+<p><strong> (1). 在安装markown插件时，ctrl+shift+p操作后输入install出现无法安装插件的问题，解决过程如下：</strong></p>
+<pre><code>* 错误提示："Package Control：There are no packages available for installation"
+
+ ![‪错误提示1](001.png)
+</code></pre>
+<p>参考网页： <a href="http://blog.csdn.net/freshlover/article/details/44261229/">Markdown Control插件安装3</a><br />
+   （Intent服务提供者（ISP）不支持IPv6就会引发上述错误）</p>
+<pre><code> 按照资料中的提示进行反复修改，并没有解决此问题。
+</code></pre>
+<p><strong> 2.执行上诉操作后问题仍未解决，于是尝试重新下载 Sublime text软件. </strong></p>
+<p><strong> (1). 使用Google Chrome在Sublime Text官网中重新download后根据上述过程重复操作:</strong></p>
+<ul>
+<li>
+<p><strong>无法安装插件问题解决；</strong></p>
+</li>
+<li>
+<p>Ctrl+~后在控制台中输入代码并运行显示Package Control安装完成，之后按照之前的操作安装markdown preview和markdown editting插件，安装完成后可以在Sublime Text中编写Markdown语句,再CTRL + B生成网页HTML，最后 Alt + M 就可以直接在默认浏览器中预览生成的HTML文件了。</p>
+</li>
+<li>
+<p><strong>输入代码及生成的预览文件如下：</strong><br />
+<img alt="代码" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/007.png" /><img alt="html网页预览1" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/008.png" /><img alt="html网页预览2" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/009.png" /></p>
+</li>
+</ul>
+<p><strong><em>3.出现如下错误：</em></strong></p>
+<p><strong>(1). 无法插入图片；</strong></p>
+<ul>
+<li>解决方法:<br />
+     在基础语法的括号中填入图片的位置路径即可，支持绝对路径和相对路径。</li>
+</ul>
+<p>输入“ ! [‪错误提示1] (000.png) ”</p>
+<p><img alt="‪错误提示1" src="000.png" /></p>
+<p>*(错误如上图所示) *</p>
+<ul>
+<li>
+<p>按照网页上的相关教程，进行操作均未显示出图片(如上图),问题有待解决。</p>
+<p>在基础语法的括号中填入图片的位置路径即可，支持绝对路径和相对路径。</p>
+<p>按照网页上的相关教程，进行操作均未显示出图片(如上图),问题有待解决。</p>
+</li>
+<li>
+<p>参考网页： <a href="https://www.zhihu.com/question/21065229">插入图片参考</a></p>
+</li>
+</ul>
+<p><strong> (2). 转换表格形式时，经常出现文字形式，查找相关问题后得出结论：</strong></p>
+<ul>
+<li>表格必须与前面输入的文字之间有空行，否则表格会被当成普通文字渲染。</li>
+</ul>
+<p><strong> (3). 引用列表时，无法转换；</strong></p>
+<ul>
+<li>表的显示只需要在文字前加上 - 或 * ，注意的是 前后都要有空行；</li>
+</ul>
+<p><strong> (4). 调试过程中点击“view”-&gt;“hide menu”，导致主菜单隐藏：</strong></p>
+<ul>
+<li>
+<p>按住Ctrl+Shifp+p,出现一个框，在框里输入“view:”，出现了如下界面：</p>
+</li>
+<li>
+<p>选择：“View:Toggle Menu”即可。</p>
+</li>
+</ul>
+<p><strong>4. 编写至以上内容，重新下载使用新的程序编辑器 Haroopd；</strong></p>
+<p>(1). 使用Google Chrome 进入 Haroopad官网下载根据提示完成安装后自动显示为中文版.<br />
+ (2). 将Sublime Text中原有的代码复制粘贴到新建的程序编辑器 Haroopad文件中，正常显示无需调整格式.<br />
+<img alt="新编辑器代码预览" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/010.png" /><br />
+ (3). 尝试解决Sublime Text 中无法显示图片问题：</p>
+<ul>
+<li>
+<p>点击主菜单的 插入 ==&gt; 图片</p>
+<ul>
+<li>出现 ! [] (http://) 提示符，根据在Subime Text插入图片的教程中，尝试添加 <img alt="图片名" src="图片地址/文件名" />，无法显示出图片：</li>
+</ul>
+<p>错误显示为：         <img alt="错误显示" src="00.png" /><br />
+* 根据网上教程将图片文件与.md文件保存在同一个 Haroopad文件夹下新建的文件夹中；</p>
+</li>
+<li>
+<p>重复上一步操作插入图片<img alt="图片名" src="图片地址/图片文件名" />，成功插入图片；</p>
+</li>
+</ul>
+<p>(4). 将“Z变换教案”word文件中带公式的表格截图并插入至“Z变换教案.md&rdquo;中</p>
+<p>(5).继续复制粘贴后，文本中出现公式无法在.md文件中正确显示，</p>
+<ul>
+<li>
+<p>*错误如下图所示： *</p>
+<p><img alt="无法实现公式" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/011.png" /></p>
+</li>
+<li>
+<p>&lt; img src=&rdquo;<a href="http://chart.googleapis.com/chart?cht=tx&amp;chl=">http://chart.googleapis.com/chart?cht=tx&amp;chl=</a> X(\Z) = \frac +∞ -∞ \ (x(n)Z^{-n}&rdquo; style=&rdquo;border:none;&rdquo;&gt;</p>
+</li>
+<li>X(Z)=∑_(-∞)^(+∞)▒〖x(n) Z^(-n) 〗<br />
+根据查找的资料列出以下公式：X(\Z) =  \sum +∞ -∞ \ x(n) z^(-n)<ul>
+<li>无法显示公式</li>
+</ul>
+</li>
+</ul>
+<h5><em>参考文献：</em></h5>
+<ol>
+<li>帮助 ==&gt;Markdown语法帮助；</li>
+<li><a href="http://blog.csdn.net/kamidox/article/details/48380239">http://blog.csdn.net/kamidox/article/details/48380239</a></li>
+<li><a href="http://blog.csdn.net/xiahouzuoxin/article/details/26478179">http://blog.csdn.net/xiahouzuoxin/article/details/26478179</a></li>
+<li><a href="http://www.ituring.com.cn/article/32403September">http://www.ituring.com.cn/article/32403September</a> 12, 2017 7:51 PM</li>
+</ol>
+<p>(6). 尝试在表格中进行换行;</p>
+<ul>
+<li>直接按Enter键，导致文字脱离表格外显示；</li>
+</ul>
+<p><img alt="表格文字分离" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/012.png" /></p>
+<ul>
+<li>
+<p>根据之前资料加入&lt; br &gt;,成功换行；</p>
+<p><img alt="成功换行" src="/home/huhuhuhu/haroopad/%E6%96%87%E4%BB%B6%E9%9B%86/z%E5%8F%98%E6%8D%A2%E6%95%99%E6%A1%88%E5%88%B6%E4%BD%9C/013.png" /></p>
+</li>
+</ul>
+<p>(7). 将本文中的链接使用超链接替换；<br />
+    插入===&gt;超链接</p>
+<ul>
+<li>[超链接名称] (http://网址)</li>
+</ul>
+<p>(8). 将markdown文件转换为pdf文件</p>
+<ul>
+<li>利用Markdown Preview的Preview in Browser功能可以在浏览器上看到htm效果。在页面右键-&gt;打印-&gt;另存为pdf-&gt;调节页边距即可将pdf文件下载下来。</li>
+</ul>
+<p><strong>六、实验总结</strong><br />
+学习 Markdown语言时希望能够完整的将“Z变换教案”编写并呈现出来，但由于网络资源的限制，并没有找到能够解决Markdown语言问题的资料和方法，所以在实验过程中仍然存在一些没有解决到位的问题，例如公式的插入等等，在之后的学习中会继续补充并加以完善。</p>
