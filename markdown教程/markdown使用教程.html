@@ -1,0 +1,232 @@
+<p><strong> 查阅markdown标记语言</strong></p>
+<p>Markdown使用规则</p>
+<ul>
+<li>
+<p>标题<br />
+标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 # 号即可。</p>
+<ul>
+<li>
+<h1><a name="user-content-_1" href="#_1" aria-hidden="true"><span></span></a>一级标题</h1>
+</li>
+<li>
+<h2><a name="user-content-_2" href="#_2" aria-hidden="true"><span></span></a>二级标题</h2>
+</li>
+<li>
+<h3><a name="user-content-_3" href="#_3" aria-hidden="true"><span></span></a>三级标题</h3>
+</li>
+</ul>
+</li>
+</ul>
+<p>以此类推，总共六级标题，建议在井号后加一个空格，这是最标准的 Markdown 语法。</p>
+<ul>
+<li>
+<p>列表</p>
+<p>列表的显示只需要在文字前加上 - 或 * 即可变为无序列表，有序列表则直接在文字前加 1. 2. 3. 符号要和文字之间加上一个字符的空格。 要注意的是 前后都要有空行：<br />
+<img alt="标题" src="014.png" /></p>
+</li>
+<li>
+<p>引用</p>
+<p>在文本前加入 &gt; 这种尖括号（大于号）即可<br />
+<img alt="引用" src="015.png" /></p>
+</li>
+<li>
+<p>图片与链接</p>
+<p>插入链接与插入图片的语法很像，区别在一个 !号<br />
+插入图片的地址需要图床，生成URL地址即可。<br />
+注意：图片必须与需插入的文件在同一文件夹内；</p>
+</li>
+</ul>
+<p><img alt="图片" src="016.jpg" /></p>
+<ul>
+<li>粗体与斜体</li>
+</ul>
+<p>Markdown 的粗体和斜体用两个 * 包含一段文本就是粗体的语法，用一个 * 包含一段文本就是斜体的语法。<br />
+     例如：<strong>这里是粗体</strong>    <em>这里是斜体</em></p>
+<ul>
+<li>居中和对齐<br />
+&lt; center  &gt;居中&lt; /center  &gt; <br />
+&lt; h5 style=&rdquo;text-align:right&rdquo;&gt;右对齐&lt; /h5&gt;<br />
+&lt; h5 style=&rdquo;text-align:left&rdquo;&gt;左对齐&lt; /h5&gt;<br />
+或者<br />
+居中<br />
+&lt; center&gt;居中</ center></li>
+</ul>
+<p><center>居中</center></p>
+<p>左对齐：<br />
+&lt; p align=&rdquo;left&rdquo;&gt;左对齐&lt; /p&gt;</p>
+<p align="left">左对齐</p>
+
+<p>右对齐：<br />
+&lt; p align=&rdquo;right&rdquo;&gt;右对齐&lt; /p&gt;</p>
+<p align="right">右对齐</p>
+
+<ul>
+<li>换行符</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>爱好</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张三</td>
+<td>足球<br>篮球</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>李四|羽毛球&lt;br&gt;乒乓球
+
+显示为：
+姓名
+爱好
+张三
+足球
+篮球
+李四
+羽毛球
+乒乓球
+</code></pre>
+<ul>
+<li>表格</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>标题</th>
+<th>标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+<h5><a name="user-content-_4" href="#_4" aria-hidden="true"><span></span></a>还可以添加一些边框：</h5>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>标题</th>
+<th>标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+<p>你可以控制单元格的对齐方式：</p>
+<table>
+<thead>
+<tr>
+<th align="left">标题</th>
+<th>标题</th>
+<th align="right">标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">左</td>
+<td>中</td>
+<td align="right">右</td>
+</tr>
+<tr>
+<td align="left">左</td>
+<td>中</td>
+<td align="right">右</td>
+</tr>
+</tbody>
+</table>
+<p>例子如下：<br />
+| Tables  | Are       | Cool  |<br />
+| ------------- |:-------------:| -----:|<br />
+| col 3 is      | right-aligned | $1600 |<br />
+| col 2 is      | centered      |   $12 |<br />
+| zebra stripes | are neat      |    $1 |<br />
+     这种语法生成的表格如下：</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>代码框</p>
+<p>如果需要在文章里引用代码框，在 Markdown 下实现，只需要用两个 ` 把中间的代码包裹起来。图例：</p>
+<p>使用 tab 键即可缩进。</p>
+</li>
+<li>
+<p>分割线</p>
+<p>分割线的语法只需要另起一行，连续输入三个星号 *** 即可。</p>
+</li>
+<li>
+<p>文本样式<br />
+（带“*”星号的文本样式，在原版Markdown标准中不存在，但在其大部分衍生标准中被添加）</p>
+<ul>
+<li>链接 :<a href="URL">Title</a> [Title] (URL)</li>
+<li>加粗 :<strong>Bold</strong> </li>
+<li>斜体字 :<em>Italics</em> </li>
+<li>*删除线 :<del>text</del> (<del> text</del>)</li>
+<li>*高亮 :==text== = =text==</li>
+<li>段落 : 段落之间空一行</li>
+<li>换行符 : 一行结束时输入两个空格</li>
+<li>列表 :* 添加星号成为一个新的列表项。</li>
+<li>引用 :&gt; 引用内容</li>
+<li>内嵌代码 : <code>alert('Hello World');</code></li>
+<li>画水平线 (HR) :-------- (- - - - - - - -)</li>
+</ul>
+</li>
+<li>
+<p>图片</p>
+</li>
+</ul>
+<p>使用Markdown将图像插入文章，你需要在Markdown编辑器输入 <img alt="" src="" /> 。 这时在预览面板中会自动创建一个图像上传框。你可以从电脑桌面拖放图片(.png, .gif, .jpg)到上传框, 或者点击图片上传框使用标准的图像上传方式。 如果你想通过链接插入网络上已经存在的图片，只要单击图片上传框的左下角的“链接”图标，这时就会呈现图像URL的输入框。想给图片添加一个标题, 你需要做的是将标题文本插图中的方括号，e.g;<img alt="This is a title" src="" />.</p>
+<p><strong> 注：</strong><br />
+<em> 先输入标题行，回车后在第二行输入|-后，按tab键就将进入Table编辑模式。<br />
+</em> 表格必须与前面输入的文字之间有空行，否则表格会被当成普通文字渲染。</p>
+<p>具体使用Sublime Text编写Markdown：<br />
+<a href="http://blog.csdn.net/qazxswed807/article/details/51235792">markdown使用教程1（参考）</a></p>
+<p><a href="http://www.appinn.com/markdown/">markdown使用教程2（参考）</a></p>
