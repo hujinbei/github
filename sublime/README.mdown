@@ -1,0 +1,49 @@
+#在mac系统安装sublime
+
+1.首先进入[sublime官网](https://www.sublimetext.com/3)下载sublime text 3
+
+* 选择 OS X(10.7 or later is required)建立下载，安装完成后打开sublime text 3 安装插件
+
+2.首先，安装 package control ，打开“view”-->“Show Console”，打开后在窗口输入以下代码：
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/view1.png)
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/代码2.png)
+
+```
+import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+
+```
+
+3.安装完成后即可开始安装插件，打开“sublime text”-->"preseferences"-->"package control",然后在框中输入“install package”，或者使用快捷键“⌘+shift+p”，然后在新弹出的窗口中依次输入“Markdown Editing”,“Markdown Preview”插件，双击项目即可安装插件；
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/preferences3.png)
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/packagecontrol4.png)
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/installpackage5.png)
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/installpackage6.png)
+
+**错误提示：**在安装Markdown插件的过程中出现无法下载插件的问题，错误提示为：Package Control——unable to download Markdown Extended please view the console for more details.
+
+**解决方法：**由于某类WiFi网络不能下载此类插件，所以更换热点后即可成功下载；
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/错误1.png)
+
+4.安装完成后可在“sublime text”-->"preseferences"-->"Package Settings”下看到你已经安装完成好的两个Markdown插件。
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/8.png)
+
+5.在随便编辑一个.md文件后尝试运行，发现无法直接保存.md文件与sublime text的文件夹中，但可以保存在桌面等其他位置，错误提示如下：
+
+![](/Users/huhuhu/Desktop/sublime文件/sublime/image/错误2.png)
+
+* 在查阅相关网页资料后得知这是由于root权限的问题，导致文件无法直接读入磁盘位置，可以在“finder-应用程序-实用工具-磁盘工具”里将硬盘格式化成ms-dos fat格式或者exfat格式就可以在Mac系统中直接读入了；
+
+
+
+参考网页：
+https://zhidao.baidu.com/question/458758792366905445.html
+
+https://stackoverflow.com/questions/25537035/sublime-text-3-on-mac-save-read-only-is-not-requesting-password
