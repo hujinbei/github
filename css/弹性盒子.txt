@@ -1,0 +1,19 @@
+弹性盒子模型:是一个CSS3新增布局模块，用于实现容器里项目的对齐、方向、排序。
+弹性盒子模型最大的特性在于，能够动态修改子元素的宽度和高度，以满足不同尺寸屏幕下的恰当布局。
+
+语法
+	flex-direction:row|row-reverse|column|colum-reverse
+	设置主轴方向，确定弹性子元素排列方式。
+
+
+	flex-wrap:nowrap|wrap|wrap-reverse
+	设置弹性子元素超出弹性容器范围时是否换行
+
+
+多列属性column
+媒体查询
+	1.在link元素中的CSS媒体查询:<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="../css/picBegin.css">
+
+	2.在样式表中的CSS媒体查询:@media (max-width: 800px) {
+	CSS语句
+}

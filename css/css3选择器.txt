@@ -1,0 +1,103 @@
+root用法: 
+	:root{css语句}
+
+not用法:  
+	div *:not(/*要排除的标签名*/){css语句}
+
+empty用法:
+	:empty{css语句/*填充作用*/}
+
+target用法:
+	:target{css语句 /*用于链接(页面内跳转)*/}
+
+
+
+					2.结构性伪类选择器
+
+1.first-line /*对文字的第一行使用样式*/
+
+2.first-letter /*对文字的首字母使用样式*/
+
+3.before /*在某个元素之前插入内容*/
+  eg.  li:before{content:语句}
+
+ 4.after /*在某个元素之后插入内容*/
+  eg.  li:after{content:语句}
+
+ 
+
+ 					3.UI元素状态伪类选择器
+指定样式只有当元素处于某种状态才起作用，默认状态不起作用。
+CSS3有17种UI元素状态伪类选择器
+1.hover /*鼠标滑过时*/
+
+2.focus /*鼠标点击时*/
+
+3.active /*鼠标按住不放*/
+
+4.checked /*复选框被选中后样式*/
+
+ 
+
+ 					4.CSS盒子
+1.盒子容纳不下的内容的显示:
+	overflow:auto/hiden
+
+2.盒子阴影的计算:
+	box-shadow:
+
+3.图像边框
+	-webkit-border-image: url(path) 50 50 50 60;
+	width:auto;
+
+
+				5.CSS3动画
+1.Transition(简单效果)
+	transition: transform 1s linear,color 1s linear,background-color 1s linear,height 1s linear,font-size 1s linear;
+		}
+		div:hover{
+			transform: rotate(25deg);
+			color: white;
+			background-color: aqua;
+			height: 100px;
+			font-size: 40px;
+		}
+2.Animations(复杂效果)
+	div{
+			margin-left: 100px;
+			margin-top: 100px;
+			background-color: pink;
+			font-size: 20px;
+			color: black;
+			width: 200px;
+			height: 50px;
+			text-align: center;
+			float: left;
+		}
+		@-webkit-keyframes xuanzhuan {
+			0%{
+				transform: translate(0px,0px) scale(1) rotate(0deg);
+				color: red;
+			}
+			25%{
+				transform: translate(200px,0px) scale(1.5)rotate(0deg);
+				background-color: aqua;
+				color: orange;
+			}
+			50%{
+				transform: translate(0px,0) scale(1) rotate(0deg);
+				background-color: blue;
+				color: white;
+
+			}
+			75%{
+				transform: translate(0px,0) scale(1) rotate(25deg);
+				font-size: 40px;
+			}
+			100%{
+				transform: translate(0px,0) scale(1) rotate(-25deg);
+			}
+		}
+		div:hover{
+			-webkit-animation: xuanzhuan 5s linear;
+		}

@@ -1,0 +1,7 @@
+CSS3计数器（CSS Counters)可以允许我们使用css对页面中的任意元素进行计数。
+		属性                属性说明
+	counter-reset           定义计数器，包括初始值、作用域等
+	counter-increment       设置计数器的增数
+	content                 在::before和::after中生成内容
+	counter()               在content中使用，用来调用计数器
+	@counter-style          自定义列表样式

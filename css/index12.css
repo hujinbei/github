@@ -1,0 +1,36 @@
+.transform{
+	width: 900px;
+	background-color: #fdfdfd;
+	margin: 50px auto;
+}
+.transform:after{
+	clear: both;
+	content: ' ';
+	display: block;
+	overflow: hidden;
+}
+.transform > p{
+	width: 250px;
+	float: left;
+	border:1px solid #999;
+	margin-right: 10px;
+	text-align: content;
+	padding-bottom: 10px;
+}
+.transform > p strong{
+	display: block;
+	background-color: #eee;
+	line-height: 25px;
+	font-size: 25px;
+	font-family: "Microsoft Yahei";
+	color: #333;
+	margin-bottom: 10px;
+}
+.transform > p span{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border:1px #ccc solid;
+	background-color: #09f;
+}
